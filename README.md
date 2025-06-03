@@ -1,4 +1,4 @@
-# 🧠 TalentParse
+# 📝 TalentParse
 
 TalentParse is an intelligent resume parsing web app built with **Streamlit**, designed to extract structured information from resumes (PDFs), analyze them using **Google Gemini AI**, and store the data for future access. This application is ideal for HR teams, recruiters, and career portals looking to automate resume screening and candidate evaluation.
 
@@ -7,7 +7,7 @@ TalentParse is an intelligent resume parsing web app built with **Streamlit**, d
 ## 🚀 Features
 
 - 📄 Upload resume PDFs
-- 🧠 Extract:
+- 📝 Extract:
   - Name, Email, Phone
   - Skills
   - Work Experience
