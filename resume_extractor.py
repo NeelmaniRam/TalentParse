@@ -46,16 +46,10 @@ Base.metadata.create_all(bind=engine)
 # Load NLP model
 try:
     nlp = spacy.load("en_core_web_sm")
-except OSError:
-    try:
-        st.info("Downloading spaCy model...")
-        spacy.cli.download("en_core_web_sm")
-        nlp = spacy.load("en_core_web_sm")
-        st.success("spaCy model downloaded successfully!")
-    except Exception as e:
-        st.error(f"Error downloading spaCy model: {str(e)}")
-        st.error("Please make sure spacy-lookups-data is installed and try again.")
-        raise
+    st.success("spaCy model downloaded successfully!")
+except OSError as e:
+    st.error("spaCy model 'en_core_web_sm' is not installed. Please check the installation.")
+    raise e
 
 def extract_text_and_links(file_path: str):
     """Extract text and hyperlinks from PDF file."""
