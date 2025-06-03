@@ -15,6 +15,18 @@ from google.genai import types
 # Load environment variables
 load_dotenv()
 
+st.set_page_config(page_title="TalentParse", page_icon="📝", layout="centered")
+st.markdown("""
+    <style>
+    .main { background-color: #f0f2f6; padding: 20px; border-radius: 10px; }
+    h1 { color: #2E86C1; text-align: center; }
+    .stButton button { background-color: #2E86C1; color: white; }
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("TalentParse")
+st.markdown("**Parse talent from resumes efficiently**")
+
 # Initialize Gemini client
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
@@ -226,17 +238,6 @@ def get_all_resumes():
     return resumes
 
 def main():
-    st.set_page_config(page_title="TalentParse", page_icon="📝", layout="centered")
-    st.markdown("""
-        <style>
-        .main { background-color: #f0f2f6; padding: 20px; border-radius: 10px; }
-        h1 { color: #2E86C1; text-align: center; }
-        .stButton button { background-color: #2E86C1; color: white; }
-        </style>
-    """, unsafe_allow_html=True)
-
-    st.title("TalentParse")
-    st.markdown("**Parse talent from resumes efficiently**")
     
     # Upload PDF section
     uploaded_file = st.file_uploader("Upload your resume (PDF)", type=['pdf'])
