@@ -1,0 +1,8 @@
+streamlit
+pdfplumber
+spacy
+pandas
+sqlalchemy
+python-dotenv
+google-genai
+spacy-lookups-data
