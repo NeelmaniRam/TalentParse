@@ -221,7 +221,7 @@ def get_all_resumes():
     return resumes
 
 def main():
-    st.set_page_config(page_title="TalentParse", page_icon="🧠", layout="centered")
+    st.set_page_config(page_title="TalentParse", page_icon="📝", layout="centered")
     st.markdown("""
         <style>
         .main { background-color: #f0f2f6; padding: 20px; border-radius: 10px; }
