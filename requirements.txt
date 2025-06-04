@@ -1,10 +1,9 @@
 streamlit>=1.29.0
 pdfplumber>=0.10.1
 spacy>=3.7.1
-spacy-lookups-data==1.0.5  # Fixed version
+# Removed spacy-lookups-data pinning — let spaCy manage it
 pandas>=2.0.0
 sqlalchemy>=2.0.0
 python-dotenv>=1.0.0
 google-genai>=0.1.0
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
-spacy-lookups-data>=3.7.1
