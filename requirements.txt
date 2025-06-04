@@ -1,6 +1,7 @@
 streamlit>=1.29.0
 pdfplumber>=0.10.1
 spacy>=3.7.1
+spacy-lookups-data==1.0.5  # Fixed version
 pandas>=2.0.0
 sqlalchemy>=2.0.0
 python-dotenv>=1.0.0
